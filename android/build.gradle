@@ -43,8 +43,8 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlin {
-        toolchain { 
-            languageVersion = JavaLanguageVersion.of(8)
+        jvmToolchain {
+            it.languageVersion.set(JavaLanguageVersion.of(8))
         }
     }
 }
